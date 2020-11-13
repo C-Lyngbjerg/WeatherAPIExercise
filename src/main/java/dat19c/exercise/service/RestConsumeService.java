@@ -1,9 +1,11 @@
 package dat19c.exercise.service;
 
 import dat19c.exercise.model.Quote;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+@Service
 public class RestConsumeService {
     final RestTemplate restTemplate;
     private String url;
